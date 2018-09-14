@@ -34,7 +34,7 @@ if (detect == '...' && message.author.id == '385337893553438720') {
 }
 
 if (detect == 'QWA' && message.author.id == '388731578865418252') {
-	message.channel.send('...');
+	message.channel.send('UI');
 }
 
 if(message.content.indexOf(config.prefix) !== 0) return;
