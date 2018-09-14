@@ -1,0 +1,27 @@
+{
+  "name": "mybot",
+  "version": "1.0.0",
+  "description": "mybot",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mybot"
+  ],
+  "author": "Müulsh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuulshCorp/mybot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MuulshCorp/mybot/issues"
+  },
+  "homepage": "https://github.com/MuulshCorp/mybot#readme"
+}
