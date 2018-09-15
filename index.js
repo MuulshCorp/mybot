@@ -26,7 +26,7 @@ const command = args.shift().toLowerCase();
 
 const argsdetect = message.content.slice('0').trim().split(/ +/g);
 const detect = argsdetect.shift().toLowerCase();
-if (message.author.id !== '317968962656796674') {
+if (message.author.id == '317968962656796674') {
 	var msg = toString(argsdetect).replace(/mh/i, ':thinking:');
 	message.channel.send(msg);
 }
