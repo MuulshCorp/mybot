@@ -27,14 +27,6 @@ const command = args.shift().toLowerCase();
 const argsdetect = message.content.slice('0').trim().split(/ +/g);
 const detect = argsdetect.shift().toLowerCase();
 
-if (detect == '1' && message.author.id !== '317968962656796674' && message.author.id == '388731578865418252' || ) {
-	message.channel.send('2 \n3 \nSoleil!').catch();
-}
-
-if (detect == 'hein' && message.author.id !== '317968962656796674' && message.author.id == '388731578865418252' || ) {
-	message.channel.send('2 \n3 \nSoleil!').catch();
-}
-
 if (detect == '...' && message.author.id == '385337893553438720') {
 	message.channel.send('...').catch();
 }
