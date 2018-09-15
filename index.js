@@ -6,17 +6,17 @@ const config = require("./config.json");
 
 
 client.on("ready", () => {
-	client.user.setActivity(`je suis sur ${client.guilds.size} serveurs`);
+	client.user.setActivity(`parler sur ${client.guilds.size} serveurs`);
 	console.log(`je suis sur ${client.guilds.size} serveurs`)
 });
 
 
 client.on("guildCreate", guild => {
-	client.user.setActivity(`je suis sur ${client.guilds.size} serveurs`);
+	client.user.setActivity(`parler sur ${client.guilds.size} serveurs`);
 });
 
 client.on("guildDelete", guild => {
-	client.user.setActivity(`je suis sur ${client.guilds.size} serveurs`);
+	client.user.setActivity(`parler sur ${client.guilds.size} serveurs`);
 });
 
 
@@ -37,11 +37,19 @@ if (detect == 'QWA' && message.author.id == '388731578865418252') {
 	message.channel.send('UI');
 }
 
+if (detect == 'ouééé') {
+	message.chanel.send('ééé');
+}
+
 if(message.content.indexOf(config.prefix) !== 0) return;
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
 if (command == 'bui') {
     message.channel.send('Lien pour inviter bui : http://slackercompany.ml/bui');
+}
+
+if (command == 'info') {
+	message.channel.send(`je suis sur ${client.guilds.size} serveurs`);
 }
 });
 client.login(process.env.TOKEN);
