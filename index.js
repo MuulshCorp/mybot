@@ -27,8 +27,17 @@ const command = args.shift().toLowerCase();
 const argsdetect = message.content.slice('0').trim().split(/ +/g);
 const detect = argsdetect.shift().toLowerCase();
 
+var msg = argsdetect.replace(/mh/i, ':thinking:');
+message.channel.send(msg);
+
 if (detect == 'ah' && message.author.id !== '317968962656796674') {
 	message.channel.send('b').catch();
+}
+
+if (detect == '1' && message.author.id !== '317968962656796674') {
+	message.channel.send('2').catch();
+	message.channel.send('3').catch();
+	message.channel.send('Soleil !').catch();
 }
 
 if (detect == '...' && message.author.id == '385337893553438720') {
@@ -41,12 +50,6 @@ if (detect == 'QWA' && message.author.id == '388731578865418252') {
 
 if (detect == 'ouééé') {
 	message.channel.send('ééé').catch();
-}
-
-if (detect == 'th' || detect == 'mh' && message.author.id == '317968962656796674') {
-	const sayMessage = argsdetect.join(" ");
-    message.delete().catch(O_o=>{}); 
-    message.channel.send(sayMessage+' :thinking:').catch();
 }
 
 if(message.content.indexOf(config.prefix) !== 0) return;
