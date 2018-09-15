@@ -27,7 +27,7 @@ const command = args.shift().toLowerCase();
 const argsdetect = message.content.slice('0').trim().split(/ +/g);
 const detect = argsdetect.shift().toLowerCase();
 
-if (detect == 'ah') {
+if (detect == 'ah' && message.author.id !== '317968962656796674') {
 	message.channel.send('b').catch();
 }
 
