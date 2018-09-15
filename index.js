@@ -46,6 +46,12 @@ if (detect == 'ouééé') {
 if(message.content.indexOf(config.prefix) !== 0) return;
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
+if (command == 'th' && message.author.id == '317968962656796674') {
+	const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{}); 
+    message.channel.send(sayMessage+':thinking:').catch();
+}
+
 if (command == 'bui') {
 	message.delete().catch(O_o=>{}); 
     message.channel.send('Lien pour inviter bui : http://slackercompany.ml/bui').catch();
