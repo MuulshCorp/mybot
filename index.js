@@ -43,10 +43,16 @@ if (detect == 'ouééé') {
 	message.channel.send('ééé').catch();
 }
 
+if (detect == 'th' || detect == 'mh' && message.author.id == '317968962656796674') {
+	const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{}); 
+    message.channel.send(sayMessage+' :thinking:').catch();
+}
+
 if(message.content.indexOf(config.prefix) !== 0) return;
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
-if (command == 'th' && message.author.id == '317968962656796674') {
+if (command == 'th' || command == 'mh' && message.author.id == '317968962656796674') {
 	const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage+' :thinking:').catch();
