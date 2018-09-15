@@ -54,17 +54,17 @@ if (command == 'cookie' && message.author.id == '317968962656796674') {
     message.channel.send(sayMessage+' :cookie:').catch();
 }
 
-if (command == 'bui') {
+if (command == 'bui' && message.author.id == '317968962656796674') {
 	message.delete().catch(O_o=>{}); 
     message.channel.send('Lien pour inviter bui : http://slackercompany.ml/bui').catch();
 }
 
-if (command == 'site') {
+if (command == 'site' && message.author.id == '317968962656796674') {
 	message.delete().catch(O_o=>{}); 
     message.channel.send('Lien pour mon site : http://slackercompany.ml/').catch();
 }
 
-if (command == 'info') {
+if (command == 'info' && message.author.id == '317968962656796674') {
 	message.delete().catch(O_o=>{}); 
 	message.channel.send(`je suis sur ${client.guilds.size} serveurs`).catch();
 }
