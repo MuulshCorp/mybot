@@ -6,17 +6,17 @@ const config = require("./config.json");
 
 
 client.on("ready", () => {
-	client.user.setActivity(`parler sur ${client.guilds.size} serveurs`);
-	console.log(`je suis sur ${client.guilds.size} serveurs`)
+	client.user.setActivity(`parler sur environ ${client.guilds.size} serveurs et demi`);
+	console.log(`parler sur environ ${client.guilds.size} serveurs et demi`)
 });
 
 
 client.on("guildCreate", guild => {
-	client.user.setActivity(`parler sur ${client.guilds.size} serveurs`);
+	client.user.setActivity(`parler sur environ ${client.guilds.size} serveurs et demi`);
 });
 
 client.on("guildDelete", guild => {
-	client.user.setActivity(`parler sur ${client.guilds.size} serveurs`);
+	client.user.setActivity(`parler sur environ ${client.guilds.size} serveurs et demi`);
 });
 
 
