@@ -26,30 +26,37 @@ const command = args.shift().toLowerCase();
 
 const detect = message.content;
 if (detect == 'ah') {
-	message.channel.send('b');
+	message.channel.send('b').catch();
 }
 
 if (detect == '...' && message.author.id == '385337893553438720') {
-	message.channel.send('...');
+	message.channel.send('...').catch();
 }
 
 if (detect == 'QWA' && message.author.id == '388731578865418252') {
-	message.channel.send('UI');
+	message.channel.send('UI').catch();
 }
 
 if (detect == 'ouééé') {
-	message.chanel.send('ééé');
+	message.chanel.send('ééé').catch();
 }
 
 if(message.content.indexOf(config.prefix) !== 0) return;
 if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
 if (command == 'bui') {
-    message.channel.send('Lien pour inviter bui : http://slackercompany.ml/bui');
+	message.delete().catch(O_o=>{}); 
+    message.channel.send('Lien pour inviter bui : http://slackercompany.ml/bui').catch();
+}
+
+if (command == 'site') {
+	message.delete().catch(O_o=>{}); 
+    message.channel.send('Lien pour mon site : http://slackercompany.ml/').catch();
 }
 
 if (command == 'info') {
-	message.channel.send(`je suis sur ${client.guilds.size} serveurs`);
+	message.delete().catch(O_o=>{}); 
+	message.channel.send(`je suis sur ${client.guilds.size} serveurs`).catch();
 }
 });
 client.login(process.env.TOKEN);
