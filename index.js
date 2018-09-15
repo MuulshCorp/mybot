@@ -40,7 +40,7 @@ if (detect == 'QWA' && message.author.id == '388731578865418252') {
 }
 
 if (detect == 'ouééé') {
-	message.chanel.send('ééé').catch();
+	message.channel.send('ééé').catch();
 }
 
 if(message.content.indexOf(config.prefix) !== 0) return;
