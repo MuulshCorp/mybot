@@ -24,7 +24,9 @@ client.on("message", async message => {
 const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();
 
-const detect = message.content;
+const argsdetect = message.content.slice('0').trim().split(/ +/g);
+const detect = argsdetect.shift().toLowerCase();
+
 if (detect == 'ah') {
 	message.channel.send('b').catch();
 }
