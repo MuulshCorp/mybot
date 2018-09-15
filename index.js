@@ -44,7 +44,7 @@ if (detect == 'ouééé') {
 }
 
 if (detect == 'th' || detect == 'mh' && message.author.id == '317968962656796674') {
-	const sayMessage = args.join(" ");
+	const sayMessage = argsdetect.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage+' :thinking:').catch();
 }
